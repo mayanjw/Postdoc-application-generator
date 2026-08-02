@@ -23,10 +23,13 @@ Generate cover letters, research statements, teaching statements for postdoc app
 
 第三步：安装依赖库
 在 PowerShell 中，切换到项目文件夹（例如 cd E:\Cover_letter_generator），然后运行：
-    python -m pip install -r requirements.txt
-如果 requirements.txt 未提供，请手动安装：
-    python -m pip install streamlit openai requests PyPDF2 python-dotenv beautifulsoup4 python-docx
 
+    python -m pip install -r requirements.txt
+    
+如果 requirements.txt 未提供，请手动安装：
+
+    python -m pip install streamlit openai requests PyPDF2 python-dotenv beautifulsoup4 python-docx
+    
 第四步：获取 DeepSeek API Key
 注册 DeepSeek 开放平台 账号。
 在平台中创建 API Key（以 sk- 开头），并复制保存。
@@ -36,7 +39,9 @@ Generate cover letters, research statements, teaching statements for postdoc app
 
 第五步：运行程序
 在 PowerShell 中，输入：
+
     python -m streamlit run app.py
+    
 程序会自动打开浏览器，显示操作界面。
 
 第六步：开始使用
