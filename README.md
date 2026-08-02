@@ -12,69 +12,41 @@ Generate cover letters, research statements, teaching statements for postdoc app
 本地运行：所有数据只在你的电脑上处理，保护隐私。
 
 如何安装和使用
+
 第一步：安装 Python 环境
-
-    访问 python.org，下载并安装 Python 3.8 或更高版本（安装时务必勾选 “Add Python to PATH”）。
-
-    安装完成后，打开 PowerShell（或命令提示符），输入 python --version 检查是否安装成功。
+访问 python.org，下载并安装 Python 3.8 或更高版本（安装时务必勾选 “Add Python to PATH”）。
+安装完成后，打开 PowerShell（或命令提示符），输入 python --version 检查是否安装成功。
 
 第二步：下载本项目代码
-
-    点击本仓库右上角的 “Code” → “Download ZIP”，解压到你的电脑文件夹中。
-
-    或者使用 Git 克隆（如果你熟悉 Git）。
+点击本仓库右上角的 “Code” → “Download ZIP”，解压到你的电脑文件夹中。
+或者使用 Git 克隆（如果你熟悉 Git）。
 
 第三步：安装依赖库
-
 在 PowerShell 中，切换到项目文件夹（例如 cd E:\Cover_letter_generator），然后运行：
-
-bash
-
-python -m pip install -r requirements.txt
-
+    python -m pip install -r requirements.txt
 如果 requirements.txt 未提供，请手动安装：
-
-bash
-
-python -m pip install streamlit openai requests PyPDF2 python-dotenv beautifulsoup4 python-docx
+    python -m pip install streamlit openai requests PyPDF2 python-dotenv beautifulsoup4 python-docx
 
 第四步：获取 DeepSeek API Key
-
-    注册 DeepSeek 开放平台 账号。
-
-    在平台中创建 API Key（以 sk- 开头），并复制保存。
-
-    在项目文件夹中创建一个名为 .env 的文件（注意文件名以点开头），用记事本打开，输入：
-    text
-
+注册 DeepSeek 开放平台 账号。
+在平台中创建 API Key（以 sk- 开头），并复制保存。
+在项目文件夹中创建一个名为 .env 的文件（注意文件名以点开头），用记事本打开，输入：
     DEEPSEEK_API_KEY="你的API密钥"
-
-    保存。
+保存。
 
 第五步：运行程序
-
 在 PowerShell 中，输入：
-
-bash
-
-python -m streamlit run app.py
-
+    python -m streamlit run app.py
 程序会自动打开浏览器，显示操作界面。
+
 第六步：开始使用
-
-    上传简历（PDF 格式）。
-
-    选择文档类型（求职信/研究陈述/教学陈述）。
-
-    选择语言（中文/英文）。
-
-    输入招聘网址（每行一个，可批量）。
-
-    （可选）在“补充材料”中填写额外说明或上传相关文件。
-
-    点击 “生成文档”，等待 AI 完成撰写。
-
-    生成后，你可以预览第一个文档，并点击按钮下载所有文档的 ZIP 压缩包。
+上传简历（PDF 格式）。
+选择文档类型（求职信/研究陈述/教学陈述）。
+选择语言（中文/英文）。
+输入招聘网址（每行一个，可批量）。
+（可选）在“补充材料”中填写额外说明或上传相关文件。
+点击 “生成文档”，等待 AI 完成撰写。
+生成后，你可以预览第一个文档，并点击按钮下载所有文档的 ZIP 压缩包。
 
 常见问题
 
