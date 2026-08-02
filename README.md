@@ -27,11 +27,13 @@ Generate cover letters, research statements, teaching statements for postdoc app
 第三步：安装依赖库
 
 在 PowerShell 中，切换到项目文件夹（例如 cd E:\Cover_letter_generator），然后运行：
+
 bash
 
 python -m pip install -r requirements.txt
 
 如果 requirements.txt 未提供，请手动安装：
+
 bash
 
 python -m pip install streamlit openai requests PyPDF2 python-dotenv beautifulsoup4 python-docx
@@ -52,6 +54,8 @@ python -m pip install streamlit openai requests PyPDF2 python-dotenv beautifulso
 第五步：运行程序
 
 在 PowerShell 中，输入：
+
+bash
 
 python -m streamlit run app.py
 
