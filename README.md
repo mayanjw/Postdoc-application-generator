@@ -23,7 +23,7 @@ Generate cover letters, research statements, teaching statements for postdoc app
 
 第三步：安装依赖库
 在 PowerShell 中，切换到项目文件夹（例如 cd E:\Cover_letter_generator），然后运行：
-
+bash
     python -m pip install -r requirements.txt
     
 如果 requirements.txt 未提供，请手动安装：
@@ -34,7 +34,9 @@ Generate cover letters, research statements, teaching statements for postdoc app
 注册 DeepSeek 开放平台 账号。
 在平台中创建 API Key（以 sk- 开头），并复制保存。
 在项目文件夹中创建一个名为 .env 的文件（注意文件名以点开头），用记事本打开，输入：
+text
     DEEPSEEK_API_KEY="你的API密钥"
+    
 保存。
 
 第五步：运行程序
